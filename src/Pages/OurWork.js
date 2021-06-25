@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 //Images
-import athlete from "../img/athlete-small.png";
-import theracer from "../img/theracer-small.png";
-import goodtimes from "../img/goodtimes-small.png";
+import vgdbupcoming from "../img/vgdbupcoming.PNG";
+import colorizerhome from "../img/colorizerhome.PNG";
+import frequenciplaying from "../img/frequenciplaying.PNG";
 //Animations
 import { motion } from "framer-motion";
 import {
@@ -23,7 +23,7 @@ const OurWork = () => {
   const [element2, controls2] = useScroll();
   return (
     <Work
-      style={{ background: "#eee" }}
+      style={{ background: "#1b1b1b" }}
       variants={pageAnimation}
       initial="hidden"
       animate="show"
@@ -36,19 +36,19 @@ const OurWork = () => {
         <Frame4 variants={slider}></Frame4>
       </motion.div>
       <Movie>
-        <motion.h2 variants={fade}>Project 1...</motion.h2>
+        <motion.h2 variants={fade}>V G D B (Video Game DataBase)</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/the-athlete">
           <Hide>
-            <motion.img variants={photoAnim} src={athlete} alt="" />
+            <motion.img variants={photoAnim} src={vgdbupcoming} alt="" />
           </Hide>
         </Link>
       </Movie>
       <Movie ref={element} variants={fade} animate={controls} initial="hidden">
-        <h2>Project 2...</h2>
+        <h2>Colorizer</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/the-racer">
-          <img src={theracer} alt="" />
+          <img src={colorizerhome} alt="" />
         </Link>
       </Movie>
       <Movie
@@ -57,10 +57,10 @@ const OurWork = () => {
         animate={controls2}
         initial="hidden"
       >
-        <h2>Project 3...</h2>
+        <h2>Frequenci</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/good-times">
-          <img src={goodtimes} alt="" />
+          <img src={frequenciplaying} alt="" />
         </Link>
       </Movie>
       <ScrollTop />
@@ -91,6 +91,10 @@ const Movie = styled(motion.div)`
     width: 100%;
     height: 70vh;
     object-fit: cover;
+    border-radius: 1rem;
+  }
+  h2 {
+    color: whitesmoke;
   }
 `;
 

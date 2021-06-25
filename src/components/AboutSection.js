@@ -69,6 +69,13 @@ const MainBtn = styled(motion.button)`
     padding: 0.5rem;
     font-size: 1.2rem;
   }
+  &:nth-child(2) {
+    background: #0b6198;
+  }
+  &:nth-child(2):hover {
+    background: transparent;
+  }
+  
 `;
 
 const ButtonWrapper = styled(motion.div)`
