@@ -112,9 +112,10 @@ const StyledForm = styled(motion.form)`
     color: white;
     background: #0b6198;
     margin: 1rem;
+    z-index: 10;
     &:hover {
       color: #0b6198;
-      background: white;
+      background: transparent;
     }
   }
   textarea {
