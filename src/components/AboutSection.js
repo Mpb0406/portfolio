@@ -20,14 +20,16 @@ const AboutSection = () => {
           </Hide>
           <Hide>
             <motion.h2 variants={titleAnim}>
-              is <span>Mike Bolloskis.</span> I'm a{" "}
+              is <span>Mike Bolloskis.</span>
             </motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={titleAnim}>front-end web developer.</motion.h2>
+            <motion.h2 variants={titleAnim}>
+              I'm a front-end web developer.
+            </motion.h2>
           </Hide>
         </motion.div>
-        <motion.p variants={fade}>I am a self-taught developer</motion.p>
+        <motion.p variants={fade}>I am a self-taught developer specializing in React.js who is eager to work on exciting projects with other talented programmers.</motion.p>
         <ButtonWrapper>
           <MainBtn variants={fade}>
             <img src={github} alt="" />
@@ -75,7 +77,6 @@ const MainBtn = styled(motion.button)`
   &:nth-child(2):hover {
     background: transparent;
   }
-  
 `;
 
 const ButtonWrapper = styled(motion.div)`

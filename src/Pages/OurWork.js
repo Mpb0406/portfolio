@@ -43,7 +43,15 @@ const OurWork = () => {
             <motion.img variants={photoAnim} src={vgdbupcoming} alt="" />
           </Hide>
         </Link>
-      </Movie>
+        </Movie>
+        <ButtonWrapper>
+          <StyledButton>
+           <a href="https://github.com/Mpb0406/VGDB" target={"_blank"}>Code</a> 
+          </StyledButton>
+          <StyledButton>
+            <a href="https://vgdatabase.netlify.app/" target={"_blank"}>Hosted Site</a>
+          </StyledButton>
+        </ButtonWrapper>
       <Movie ref={element} variants={fade} animate={controls} initial="hidden">
         <h2>Colorizer</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
@@ -51,6 +59,14 @@ const OurWork = () => {
           <img src={colorizerhome} alt="" />
         </Link>
       </Movie>
+      <ButtonWrapper>
+          <StyledButton>
+           <a href="https://github.com/Mpb0406/Colors" target={"_blank"}>Code</a> 
+          </StyledButton>
+          <StyledButton>
+            <a href="https://colorizer-app.netlify.app/" target={"_blank"}>Hosted Site</a>
+          </StyledButton>
+        </ButtonWrapper>
       <Movie
         ref={element2}
         variants={fade}
@@ -63,6 +79,14 @@ const OurWork = () => {
           <img src={frequenciplaying} alt="" />
         </Link>
       </Movie>
+      <ButtonWrapper>
+          <StyledButton>
+           <a href="https://github.com/Mpb0406/Frequenci" target={"_blank"}>Code</a> 
+          </StyledButton>
+          <StyledButton>
+            <a href="https://frequenci.netlify.app/" target={"_blank"}>Hosted Site</a>
+          </StyledButton>
+        </ButtonWrapper>
       <ScrollTop />
     </Work>
   );
@@ -96,6 +120,22 @@ const Movie = styled(motion.div)`
   h2 {
     color: whitesmoke;
   }
+`;
+
+const StyledButton = styled(motion.button) `
+  margin: 0 2rem 5rem;
+  border-radius: 0.2rem;
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    padding: 2rem;
+  }
+`;
+
+const ButtonWrapper = styled(motion.div) `
+  display: flex;
+  justify-content: center;
 `;
 
 const Hide = styled.div`

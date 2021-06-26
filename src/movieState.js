@@ -1,79 +1,79 @@
 //Import Images
-import athlete from "./img/athlete-small.png";
-import goodtimes from "./img/goodtimes-small.png";
-import theracer from "./img/theracer-small.png";
-import athlete2 from "./img/athlete2.png";
-import goodtimes2 from "./img/good-times2.jpg";
-import theracer2 from "./img/the-racer2.jpg";
+import vgdbupcoming from "./img/vgdbupcoming.PNG";
+import colorizerhome from "./img/colorizerhome.PNG";
+import frequenciplaying from "./img/frequenciplaying.PNG";
+import vgdbdetails from "./img/vgdbdetails.PNG";
+import frequencilibrary from "./img/frequencilibrary.PNG";
+import colorizerpalettes from "./img/colorizerpalettes.PNG";
 
 export const MovieState = () => {
   return [
     {
-      title: "The Athlete",
-      mainImg: athlete,
-      secondaryImg: athlete2,
+      title: "V G D B",
+      mainImg: vgdbupcoming,
+      secondaryImg: vgdbdetails,
       url: "/work/the-athlete",
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "Axios",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Fetches data from the Rawg.io API using Axios and Redux-Thunk to manage state asynchrously.",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "Framer Motion",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Utilizes Framer-Motion library for animations/visual effects",
         },
         {
-          title: "It’s okay lmao.",
+          title: "React Router",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "React-Router is used to redirect to individual game details pages",
         },
       ],
     },
     {
-      title: "Good Times",
-      mainImg: goodtimes,
+      title: "Frequenci",
+      mainImg: frequenciplaying,
       url: "/work/good-times",
-      secondaryImg: goodtimes2,
+      secondaryImg: frequencilibrary,
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "Sass",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Styling is done via Sass to organize global styles & partials and to nest classes.",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "Mobile Responsive",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "App is responsive across all device sizes using media-queries.",
         },
         {
-          title: "It’s okay lmao.",
+          title: "Add Music",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Media info is stored in separate util.js file to allow adding and removing songs easily.",
         },
       ],
     },
     {
-      title: "The Racer",
-      mainImg: theracer,
+      title: "Colorizer",
+      mainImg: colorizerhome,
       url: "/work/the-racer",
-      secondaryImg: theracer2,
+      secondaryImg: colorizerpalettes,
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "Chroma.js Library",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Utilizes Chroma.js library to easily implement color-spectrum data.",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "Vanilla JS",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "App is done in using vanilla JS (no frameworks used).",
         },
         {
-          title: "It’s okay lmao.",
+          title: "Local Storage",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Color palettes are saved to local storage with ability to access later",
         },
       ],
     },
