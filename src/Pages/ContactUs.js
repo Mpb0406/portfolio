@@ -23,7 +23,7 @@ const ContactUs = () => {
       </Title>
       <motion.div>
         <Hide>
-          <StyledForm variants={fade} netlify>
+          <StyledForm name="contact" method="POST" data-netlify="true" variants={fade} >
             <motion.div className="wrapper">
               <motion.input placeholder="Name" type="text" name="name" />
             </motion.div>
